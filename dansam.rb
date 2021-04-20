@@ -1,0 +1,6 @@
+print "Hello World"
+puts "Dansam"
+puts "Dansam"
+puts " is great"
+print "DanSam"
+print " Snr man"
