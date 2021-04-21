@@ -58,3 +58,9 @@
 
 # there maths operators like Math.sqrt, Math.log and lot more
 #getting user input
+puts "hello this is ruby world"
+puts "Enter your name: "
+name= gets.chomp # prevent the program from printing the remaining string on a new line
+puts "Enter your age: "
+age = gets.chomp
+puts("Hello " + name + " you are cool and " + age + " years old") #this prints out the second string after variable on a new
