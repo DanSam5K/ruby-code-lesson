@@ -58,9 +58,24 @@
 
 # there maths operators like Math.sqrt, Math.log and lot more
 #getting user input
-puts "hello this is ruby world"
-puts "Enter your name: "
-name= gets.chomp # prevent the program from printing the remaining string on a new line
-puts "Enter your age: "
-age = gets.chomp
-puts("Hello " + name + " you are cool and " + age + " years old") #this prints out the second string after variable on a new
+# puts "hello this is ruby world"
+# puts "Enter your name: "
+# name= gets.chomp # prevent the program from printing the remaining string on a new line
+# puts "Enter your age: "
+# age = gets.chomp
+# puts("Hello " + name + " you are cool and " + age + " years old") #this prints out the second string after variable on a new
+  
+# Working with Arrays
+
+friends = Array["Kevin", "Karen", "Oscar"] # all data types can be store inside of an Array
+
+puts friends[0]  #to access element of an array with index of the array either start from 0 or from -1 to access the last element
+puts friends[0, 2] # access range of element of inside an array
+puts friends[0] = "Dwight" #to modifiy element of an arr
+friends.length # know the number of element inside the array
+
+family = Array.new #create an empty array
+
+family[0] = "Safiya mama" #add element and assign the index
+family[5] = "Davido"
+
