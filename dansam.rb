@@ -85,17 +85,30 @@
 # Working with Hashes
 #Hash is basically a different data structure where you can store multiple pieces of information as in the case of array, just that in Hash you can give the data a Key value pair
 
-states = {
-    "Abuja" => "ABJ",
-    1 => "London", # using number for keys
-    "Lagos" => "LAG",
-    "Kaduna" => "KAD", # two key can't exist in a single Hash object
-    :Kafanchan => "A Big Town In kaduna State", # aniother to specify key valkue pair
-}
+# states = {
+#     "Abuja" => "ABJ",
+#     1 => "London", # using number for keys
+#     "Lagos" => "LAG",
+#     "Kaduna" => "KAD", # two key can't exist in a single Hash object
+#     :Kafanchan => "A Big Town In kaduna State", # aniother to specify key valkue pair
+# }
 
-puts states['Kaduna']
-puts states[:Kafanchan]
-puts states[Nice]
+# puts states['Kaduna']
+# puts states[:Kafanchan]
+# puts states[Nice]
 
+# Working with methods
+
+def greetings(name, age) # accept paramter and 
+    puts ("Hello " + name + "you will be " + age.to_s) #passing multiple parameter
+end
+
+greetings("Dansam", 30) #for the humber to be executed we have to convert it to string explicitly if no it wont run
+
+def greetings(name="no name", age=-1) # accept paramter and and we can give them default values
+    puts ("Hello " + name + "you will be " + age.to_s) #passing multiple parameter
+end
+
+greetings("Dansam", 30)
 
 
