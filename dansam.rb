@@ -67,20 +67,35 @@
   
 # Working with Arrays
 
-friends = Array["Kevin", "Karen", "Oscar", "Akoke"] # all data types can be store inside of an Array
+# friends = Array["Kevin", "Karen", "Oscar", "Akoke"] # all data types can be store inside of an Array
 
-puts friends[0]  #to access element of an array with index of the array either start from 0 or from -1 to access the last element
-puts friends[0, 2] # access range of element of inside an array
-puts friends[0] = "Dwight" #to modifiy element of an arr
-friends.length # know the number of element inside the array
+# puts friends[0]  #to access element of an array with index of the array either start from 0 or from -1 to access the last element
+# puts friends[0, 2] # access range of element of inside an array
+# puts friends[0] = "Dwight" #to modifiy element of an arr
+# friends.length # know the number of element inside the array
 
-family = Array.new #create an empty array
+# family = Array.new #create an empty array
 
-family[0] = "Safiya mama" #add element and assign the index
-family[5] = "Davido"
-puts friends.sort() #sort array alphabetically arrays with mixed data types can't be sorted
-puts friends.reverse() #reverse the order of the array
-puts friends.include?("Akoke")
+# family[0] = "Safiya mama" #add element and assign the index
+# family[5] = "Davido"
+# puts friends.sort() #sort array alphabetically arrays with mixed data types can't be sorted
+# puts friends.reverse() #reverse the order of the array
+# puts friends.include?("Akoke")
+
+# Working with Hashes
+#Hash is basically a different data structure where you can store multiple pieces of information as in the case of array, just that in Hash you can give the data a Key value pair
+
+states = {
+    "Abuja" => "ABJ",
+    1 => "London", # using number for keys
+    "Lagos" => "LAG",
+    "Kaduna" => "KAD", # two key can't exist in a single Hash object
+    :Kafanchan => "A Big Town In kaduna State", # aniother to specify key valkue pair
+}
+
+puts states['Kaduna']
+puts states[:Kafanchan]
+puts states[Nice]
 
 
 
