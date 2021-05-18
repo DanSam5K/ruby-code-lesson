@@ -67,7 +67,7 @@
   
 # Working with Arrays
 
-friends = Array["Kevin", "Karen", "Oscar"] # all data types can be store inside of an Array
+friends = Array["Kevin", "Karen", "Oscar", "Akoke"] # all data types can be store inside of an Array
 
 puts friends[0]  #to access element of an array with index of the array either start from 0 or from -1 to access the last element
 puts friends[0, 2] # access range of element of inside an array
@@ -78,4 +78,9 @@ family = Array.new #create an empty array
 
 family[0] = "Safiya mama" #add element and assign the index
 family[5] = "Davido"
+puts friends.sort() #sort array alphabetically arrays with mixed data types can't be sorted
+puts friends.reverse() #reverse the order of the array
+puts friends.include?("Akoke")
+
+
 
