@@ -99,16 +99,30 @@
 
 # Working with methods
 
-def greetings(name, age) # accept paramter and 
-    puts ("Hello " + name + "you will be " + age.to_s) #passing multiple parameter
+# def greetings(name, age) # accept paramter and 
+#     puts ("Hello " + name + "you will be " + age.to_s) #passing multiple parameter
+# end
+
+# greetings("Dansam", 30) #for the humber to be executed we have to convert it to string explicitly if no it wont run
+
+# def greetings(name="no name", age=-1) # accept paramter and and we can give them default values
+#     puts ("Hello " + name + "you will be " + age.to_s) #passing multiple parameter
+# end
+
+# greetings("Dansam", 30)
+
+#Using return in Ruby method
+
+def cube(num)
+    return num * num * num #help to avoid printing what appear after the return keyword
+    5       
 end
 
-greetings("Dansam", 30) #for the humber to be executed we have to convert it to string explicitly if no it wont run
-
-def greetings(name="no name", age=-1) # accept paramter and and we can give them default values
-    puts ("Hello " + name + "you will be " + age.to_s) #passing multiple parameter
+def multiple(num)
+    return num * num * num * num, 70  #return multiple value like and array
+    5       
 end
+puts multiple(3)[0]
 
-greetings("Dansam", 30)
 
 
