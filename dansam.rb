@@ -113,16 +113,29 @@
 
 #Using return in Ruby method
 
-def cube(num)
-    return num * num * num #help to avoid printing what appear after the return keyword
-    5       
-end
+# def cube(num)
+#     return num * num * num #help to avoid printing what appear after the return keyword
+#     5       
+# end
 
-def multiple(num)
-    return num * num * num * num, 70  #return multiple value like and array
-    5       
-end
-puts multiple(3)[0]
+# def multiple(num)
+#     return num * num * num * num, 70  #return multiple value like and array
+#     5       
+# end
+# puts multiple(3)[0]
 
+#Working with if statement in ruby
+
+hungry = false
+work = false
+if hungry and work
+  puts "You are fucking hungry go and eat before work"
+elsif hungry and !work #!the negation operator
+  puts "we can\'t feed you no work" 
+elsif !hungry and work
+  puts "How would you wnat to make more cash"
+else
+  puts "Nice you can proceed"
+end 
 
 
