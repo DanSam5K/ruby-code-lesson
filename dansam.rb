@@ -126,16 +126,29 @@
 
 #Working with if statement in ruby
 
-hungry = false
-work = false
-if hungry and work
-  puts "You are fucking hungry go and eat before work"
-elsif hungry and !work #!the negation operator
-  puts "we can\'t feed you no work" 
-elsif !hungry and work
-  puts "How would you wnat to make more cash"
-else
-  puts "Nice you can proceed"
+# hungry = false
+# work = false
+# if hungry and work
+#   puts "You are fucking hungry go and eat before work"
+# elsif hungry and !work #!the negation operator
+#   puts "we can\'t feed you no work" 
+# elsif !hungry and work
+#   puts "How would you wnat to make more cash"
+# else
+#   puts "Nice you can proceed"
+# end 
+
+# if statement with condition max function
+
+def max(num1, num2, num3)
+    if num1 >= num2 and num1 >= num3
+        return num1
+    elsif num2 >= num1 and num2 >= num3
+        return num2
+    else
+        return num3
+    end
 end 
 
+puts max(10,6,8)
 
