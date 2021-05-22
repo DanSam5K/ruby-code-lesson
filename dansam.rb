@@ -140,15 +140,36 @@
 
 # if statement with condition max function
 
-def max(num1, num2, num3)
-    if num1 >= num2 and num1 >= num3
-        return num1
-    elsif num2 >= num1 and num2 >= num3
-        return num2
+# def max(num1, num2, num3)
+#     if num1 >= num2 and num1 >= num3
+#         return num1
+#     elsif num2 >= num1 and num2 >= num3
+#         return num2
+#     else
+#         return num3
+#     end
+# end 
+
+# puts max(10,6,8)
+
+#Case Expressions in Ruby 
+#A special type of if statement that we use to check a bunch of different things condition
+#creating a method that map day abbreviation into days of the week with case statement
+def get_day_name(day)
+    day_name = ""
+    case day 
+    when "Mon" then day_name = "Monday"
+    when "Tue" then day_name = "Tuesday"
+    when "Wed" then day_name = "Wednesday"
+    when "Thu" then day_name = "Thursday"
+    when "Fri" then day_name = "Friday"
+    when "Sat" then day_name = "Saturday"
+    when "Sun" then day_name = "Sunday"
+    when "Tue" then day_name = "Tuesday"
     else
-        return num3
+      day_name = "Inalid abbreviation"
     end
-end 
+    return day_name
+end
 
-puts max(10,6,8)
-
+puts get_day_name("St")
