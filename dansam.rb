@@ -155,21 +155,29 @@
 #Case Expressions in Ruby 
 #A special type of if statement that we use to check a bunch of different things condition
 #creating a method that map day abbreviation into days of the week with case statement
-def get_day_name(day)
-    day_name = ""
-    case day 
-    when "Mon" then day_name = "Monday"
-    when "Tue" then day_name = "Tuesday"
-    when "Wed" then day_name = "Wednesday"
-    when "Thu" then day_name = "Thursday"
-    when "Fri" then day_name = "Friday"
-    when "Sat" then day_name = "Saturday"
-    when "Sun" then day_name = "Sunday"
-    when "Tue" then day_name = "Tuesday"
-    else
-      day_name = "Inalid abbreviation"
-    end
-    return day_name
-end
+# def get_day_name(day)
+#     day_name = ""
+#     case day 
+#     when "Mon" then day_name = "Monday"
+#     when "Tue" then day_name = "Tuesday"
+#     when "Wed" then day_name = "Wednesday"
+#     when "Thu" then day_name = "Thursday"
+#     when "Fri" then day_name = "Friday"
+#     when "Sat" then day_name = "Saturday"
+#     when "Sun" then day_name = "Sunday"
+#     when "Tue" then day_name = "Tuesday"
+#     else
+#       day_name = "Inalid abbreviation"
+#     end
+#     return day_name
+# end
 
-puts get_day_name("St")
+# puts get_day_name("St")
+
+#working with while loop
+
+index = 1
+while index <= 10
+  puts index # keep executuing the code inside the loop
+  index += 1     
+end
