@@ -184,21 +184,22 @@
 
 #working with for loop
 
-friends = ['Kevin', 'Tolu', 'Joy', 'Inter', 'Nice']
+# friends = ['Kevin', 'Tolu', 'Joy', 'Inter', 'Nice']
 
-for friend in friends
-    puts friend
-end
-#another way
-friends.each do |friend|
-    puts friend
-end
+# for friend in friends
+#     puts friend
+# end
+# #another way
+# friends.each do |friend|
+#     puts friend
+# end
 
-#loop through and print index
-for index in 0..5
-    puts index
-end
+# #loop through and print index
+# for index in 0..5
+#     puts index
+# end
 
-6.times do |index|
-    puts index
-end
+# 6.times do |index|
+#     puts index
+# end
+
