@@ -235,6 +235,21 @@
 #   file.write("<h1>Oscar, accounting</h1>")
 # end
 
-File.open("employees.txt", "r+") do |file| # read and write to file
-  file.write("Daniel na baba throught christ that strengthens him")
+# File.open("employees.txt", "r+") do |file| # read and write to file
+#   file.write("Daniel na baba throught christ that strengthens him")
+# end
+
+#Error handling in ruby
+# structure for error handling 
+
+lucky_nums = [4,5,6,0] #Type erorr
+#lucky_nums["dog"]
+#num = 10/0    #zero division error
+begin
+  lucky_nums["dog"]
+  num = 10/0 
+rescue ZeroDivisionError
+  puts "Division by zero error"
+rescue TypeError => e # tell you what explicitly went wrong with rescue tag
+  puts e
 end
