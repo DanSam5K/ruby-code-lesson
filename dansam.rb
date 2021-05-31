@@ -217,8 +217,24 @@
 # end
 
 # another way to read file
-file = File.open("employees.txt", "r")
+# file = File.open("employees.txt", "r")
 
-puts file.read
+# puts file.read
 
-file.close()
+# file.close()
+# Write to files
+# File.open("employees.txt", "a") do |file| # append a text to the end of the file with new line
+#   file.write("\nOscar, accounting")
+# end
+
+# File.open("employees.txt", "w") do |file| # overwrite a file and also create a file 
+#   file.write("\nOscar, accounting")
+# end
+
+# File.open("index.html", "w") do |file| # overwrite a file and also create a file creating a new file
+#   file.write("<h1>Oscar, accounting</h1>")
+# end
+
+File.open("employees.txt", "r+") do |file| # read and write to file
+  file.write("Daniel na baba throught christ that strengthens him")
+end
