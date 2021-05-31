@@ -204,14 +204,21 @@
 # end
 
 # Reading files in ruby basic
-File.open("employees.txt", "r") do |file|
-  # puts file.read() #return the string
-  # puts file.readline() # read first line prints the first line of the code
-  # puts file.readline() # read second line prints the first lije pf the code
-  puts file.readchar() #read first char in a string prints the firstpf the code
-  puts file.readchar() #read char char in a string prints the firstpf the code
-  puts file.readchar() #read third and so forth char in a string prints the firstpf the code
-  for line in file.readlines
-    puts line
-  end
-end
+# File.open("employees.txt", "r") do |file|
+#   # puts file.read() #return the string
+#   # puts file.readline() # read first line prints the first line of the code
+#   # puts file.readline() # read second line prints the first lije pf the code
+#   puts file.readchar() #read first char in a string prints the firstpf the code
+#   puts file.readchar() #read char char in a string prints the firstpf the code
+#   puts file.readchar() #read third and so forth char in a string prints the firstpf the code
+#   for line in file.readlines
+#     puts line
+#   end
+# end
+
+# another way to read file
+file = File.open("employees.txt", "r")
+
+puts file.read
+
+file.close()
