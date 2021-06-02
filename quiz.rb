@@ -19,3 +19,17 @@ questions = [
     Question.new(p4, "b"),
     Question.new(p5, "a")
 ]
+
+def run_test(questions)
+    answer = ""
+    score = 0
+    for question in questions
+        puts question.prompt
+        answer = gets.chomp()
+        if answer == question.answer
+            score += 1
+        end
+    end
+    puts ("You got" + score.to_s + "/"  + questions.length().to_s)
+end
+run_test(questions)
