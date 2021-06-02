@@ -258,21 +258,39 @@
 #class is custom data type templte engine for creating different object
 #is instance of a class
 
-class Book 
- attr_accessor :title, :author, :pages
+# class Book 
+#  attr_accessor :title, :author, :pages
 
+# end 
+
+# book1 = Book.new
+# book1.title = 'The rise of machine'
+# book1.author = 'Gbenga Olaniyi'
+# book1.pages = 400
+
+# book2 = Book.new
+# book2.title = 'Chop small'
+# book2.author = 'Captain Lele'
+# book2.pages = 400
+
+# puts book1.author
+# puts book2.title
+
+#The initialise method is a method that get called when we create a new book object
+
+class Book 
+  attr_accessor :title, :author, :page
+  def initialize(title, author, pages)
+    @title = title
+    @author = author
+    @pages = pages
+  end
 end 
 
-book1 = Book.new
-book1.title = 'The rise of machine'
-book1.author = 'Gbenga Olaniyi'
-book1.pages = 400
-
-book2 = Book.new
-book2.title = 'Chop small'
-book2.author = 'Captain Lele'
-book2.pages = 400
+book1 = Book.new('The rise of machine', 'Gbenga Olaniyi', 400)
+book2 = Book.new('Chop small wo', 'Captain Lele', 400)
 
 puts book1.author
 puts book2.title
+    
 
