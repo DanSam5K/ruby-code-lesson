@@ -278,19 +278,42 @@
 
 #The initialise method is a method that get called when we create a new book object
 
-class Book 
-  attr_accessor :title, :author, :page
-  def initialize(title, author, pages)
-    @title = title
-    @author = author
-    @pages = pages
+# class Book 
+#   attr_accessor :title, :author, :page
+#   def initialize(title, author, pages)
+#     @title = title
+#     @author = author
+#     @pages = pages
+#   end
+# end 
+
+# book1 = Book.new('The rise of machine', 'Gbenga Olaniyi', 400)
+# book2 = Book.new('Chop small wo', 'Captain Lele', 400)
+
+# puts book1.author
+# puts book2.title
+    
+
+#Object method or instance method
+
+class Student
+  attr_accessor :name, :major, :gpa
+  def initialize(name, major, gpa)
+    @name = name
+    @major = major
+    @gpa = gpa
   end
+
+  def has_honours
+   if @gpa >= 3.5
+    return true
+   end
+   return false 
+ end
 end 
 
-book1 = Book.new('The rise of machine', 'Gbenga Olaniyi', 400)
-book2 = Book.new('Chop small wo', 'Captain Lele', 400)
+student1 = Student.new('Lucas', 'Concept Engineer', 4)
+student2 = Student.new('Davido', 'Barron Lift', 2.9)
 
-puts book1.author
-puts book2.title
-    
+puts student1.has_honours
 
