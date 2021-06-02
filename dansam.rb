@@ -242,14 +242,37 @@
 #Error handling in ruby
 # structure for error handling 
 
-lucky_nums = [4,5,6,0] #Type erorr
+#lucky_nums = [4,5,6,0] #Type erorr
 #lucky_nums["dog"]
 #num = 10/0    #zero division error
-begin
-  lucky_nums["dog"]
-  num = 10/0 
-rescue ZeroDivisionError
-  puts "Division by zero error"
-rescue TypeError => e # tell you what explicitly went wrong with rescue tag
-  puts e
-end
+# begin
+#   lucky_nums["dog"]
+#   num = 10/0 
+# rescue ZeroDivisionError
+#   puts "Division by zero error"
+# rescue TypeError => e # tell you what explicitly went wrong with rescue tag
+#   puts e
+# end
+
+# Working with classes and object in ruby
+#class is custom data type templte engine for creating different object
+#is instance of a class
+
+class Book 
+ attr_accessor :title, :author, :pages
+
+end 
+
+book1 = Book.new
+book1.title = 'The rise of machine'
+book1.author = 'Gbenga Olaniyi'
+book1.pages = 400
+
+book2 = Book.new
+book2.title = 'Chop small'
+book2.author = 'Captain Lele'
+book2.pages = 400
+
+puts book1.author
+puts book2.title
+
