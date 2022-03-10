@@ -295,24 +295,56 @@
 
 #Object method or instance method
 
-class Student
-  attr_accessor :name, :major, :gpa
-  def initialize(name, major, gpa)
-    @name = name
-    @major = major
-    @gpa = gpa
-  end
+# class Student
+#   attr_accessor :name, :major, :gpa
+#   def initialize(name, major, gpa)
+#     @name = name
+#     @major = major
+#     @gpa = gpa
+#   end
 
-  def has_honours
-   if @gpa >= 3.5
-    return true
+#   def has_honours
+#    if @gpa >= 3.5
+#     return true
+#    end
+#    return false 
+#  end
+# end 
+
+# student1 = Student.new('Lucas', 'Concept Engineer', 4)
+# student2 = Student.new('Davido', 'Barron Lift', 2.9)
+
+# puts student1.has_honours
+
+# Inheritance
+
+class Chef
+   def make_chicken
+    puts "The chef makes chicken"
    end
-   return false 
- end
-end 
+   def make_salad
+    puts "The chef makes salad"
+   end
+   
+   def make_special_dish
+    puts "The chef makes bbq ribs"
+   end
+end
+# subclass inheriting functionality from the generic subclass
+class ItalianChef < Chef
+  def make_special_dish
+    puts "The chef makes eggplant parm" # overwriting the inherited class methods
+  end
+  
 
-student1 = Student.new('Lucas', 'Concept Engineer', 4)
-student2 = Student.new('Davido', 'Barron Lift', 2.9)
+  def make_pasta
+    puts "The chef makes pasta" # give an inherited class it won special method
+  end
+  
+end
+chef = Chef.new()
+chef.make_special_dish
 
-puts student1.has_honours
-
+italian_chef = ItalianChef.new
+italian_chef.make_special_dish
+italian_chef.make_pasta
