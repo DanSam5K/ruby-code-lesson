@@ -122,8 +122,7 @@
 #     return num * num * num * num, 70  #return multiple value like and array
 #     5       
 # end
-# puts multiple(3)[0]
-
+# puts multiple(3)[0] # returns the index of the item as arrange the the function after the return keyword
 #Working with if statement in ruby
 
 # hungry = false
