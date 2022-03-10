@@ -318,33 +318,50 @@
 
 # Inheritance
 
-class Chef
-   def make_chicken
-    puts "The chef makes chicken"
-   end
-   def make_salad
-    puts "The chef makes salad"
-   end
+# class Chef
+#    def make_chicken
+#     puts "The chef makes chicken"
+#    end
+#    def make_salad
+#     puts "The chef makes salad"
+#    end
    
-   def make_special_dish
-    puts "The chef makes bbq ribs"
-   end
-end
-# subclass inheriting functionality from the generic subclass
-class ItalianChef < Chef
-  def make_special_dish
-    puts "The chef makes eggplant parm" # overwriting the inherited class methods
-  end
+#    def make_special_dish
+#     puts "The chef makes bbq ribs"
+#    end
+# end
+# # subclass inheriting functionality from the generic subclass
+# class ItalianChef < Chef
+#   def make_special_dish
+#     puts "The chef makes eggplant parm" # overwriting the inherited class methods
+#   end
   
 
-  def make_pasta
-    puts "The chef makes pasta" # give an inherited class it won special method
-  end
+#   def make_pasta
+#     puts "The chef makes pasta" # give an inherited class it won special method
+#   end
   
-end
-chef = Chef.new()
-chef.make_special_dish
+# end
+# chef = Chef.new()
+# chef.make_special_dish
 
-italian_chef = ItalianChef.new
-italian_chef.make_special_dish
-italian_chef.make_pasta
+# italian_chef = ItalianChef.new
+# italian_chef.make_special_dish
+# italian_chef.make_pasta
+
+# module
+
+module Tools
+  def sayhi(name)
+    puts "hello #{name}"
+  end
+
+  def saybye(name)
+    puts "bye #{name}"
+  end
+end
+
+include Tools
+Tools.saybye("Mike")
+
+# ruby allow users use require_relative to include a module in another files
