@@ -1,4 +1,8 @@
 puts "Enter text you want to keep History: "
 text = gets.chomp
 words = text.split(" ")
-frequencies = Hash.new(0)
+histogram = Hash.new(0)
+words.each do |word|
+	histogram[word] += 1
+end
+
