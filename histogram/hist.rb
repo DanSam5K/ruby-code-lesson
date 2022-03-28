@@ -6,3 +6,7 @@ words.each do |word|
 	histogram[word] += 1
 end
 histogram = histogram.sort_by {|word, count| count}
+histogram.reverse!
+histogram.each do |word, count|
+	puts word + ' ' + count.to_s
+end
