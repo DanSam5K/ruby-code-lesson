@@ -5,4 +5,4 @@ histogram = Hash.new(0)
 words.each do |word|
 	histogram[word] += 1
 end
-
+histogram = histogram.sort_by {|word, count| count}
