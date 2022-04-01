@@ -12,4 +12,14 @@ class Computer
 		@files[filesname] = time
 		puts "A new file called #{filesname} has been created at #{time}."
 	end
+
+	def update(filesname)
+		time = Time.now
+		@files[filesname] = time
+		puts "The file #{filesname} has been updated at #{time}."
+	end
+
+	def Computer.get_users
+		return @@users
+	end
 end
