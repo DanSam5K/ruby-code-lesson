@@ -19,6 +19,12 @@ class Computer
 		puts "The file #{filesname} has been updated at #{time}."
 	end
 
+	def delete(filesname)
+		@files.delete(filesname)
+		puts "The file #{filesname} has been deleted."
+	end
+
+
 	def Computer.get_users
 		return @@users
 	end
