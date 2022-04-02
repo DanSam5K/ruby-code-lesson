@@ -12,6 +12,19 @@ function sequenceClassifier(arr) {
       constant++;
     }
   }
+  if (strictlyIncreasing > 0 && strictlyDecreasing > 0) {
+    return 0;
+  } else if (arr.length - strictlyIncreasing === 1) {
+    return 1;
+  } else if (arr.length - constant >= 1 && strictlyIncreasing !== 0) {
+    return 2;
+  } else if (arr.length - strictlyDecreasing === 1) {
+    return 3;
+  } else if (arr.length - constant >= 1 && strictlyDecreasing !== 0) {
+    return 4;
+  } else {
+    return 5;
+  }
 }
 
 console.log(sequenceClassifier([8, 8, 8, 8, 8, 9]));
