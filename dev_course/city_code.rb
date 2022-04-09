@@ -25,3 +25,17 @@ dial_book = {
 	"orlando" => "407",
 	"lancaster" => "717"
 }
+
+# method to display city names
+
+# method to get area code, dial_book and city name
+
+
+loop do
+   puts "Do you want to lookup an area code? (Y/N)"
+
+	 answer = gets.chomp.downcase
+	 if answer != "y"
+	 	break
+	 end
+end
