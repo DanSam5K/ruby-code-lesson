@@ -35,6 +35,10 @@ def get_city_names(somehash)
 	 end
 end 
 
+def get_area_code(somehash, key)
+	somehash[key]
+end
+
 
 loop do
    puts "Do you want to lookup an area code? (Y/N)"
@@ -48,7 +52,7 @@ loop do
 	 city = gets.chomp.downcase
 	 
 	 if dial_book.include?(city)
-		puts "valid selection"
+		puts "the area code for #{city} is #{get_area_code(dial_book, city)}"
 	 else
     puts "You entered an invalid city name"
 	 end
