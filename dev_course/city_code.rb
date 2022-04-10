@@ -48,4 +48,9 @@ loop do
 	 city = gets.chomp.downcase
 	 
 	 if dial_book.include?(city)
+		puts "valid selection"
+	 else
+    puts "You entered an invalid city name"
+	 end
+   
 end
