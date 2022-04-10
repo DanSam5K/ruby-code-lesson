@@ -29,6 +29,11 @@ dial_book = {
 # method to display city names
 
 # method to get area code, dial_book and city name
+def get_city_names(somehash)
+   somehash.each do |key, value|
+	 	puts "The city name is #{key} and the area code is #{value}"
+	 end
+end 
 
 
 loop do
@@ -38,4 +43,9 @@ loop do
 	 if answer != "y"
 	 	break
 	 end
+	 puts "Which city do you want the area code for?"
+	 get_city_names(dial_book)
+	 city = gets.chomp.downcase
+	 
+	 if dial_book.include?(city)
 end
