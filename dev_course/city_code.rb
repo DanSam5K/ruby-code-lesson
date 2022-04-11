@@ -54,7 +54,7 @@ loop do
 	 if dial_book.include?(city)
 		puts "the area code for #{city} is #{get_area_code(dial_book, city)}"
 	 else
-    puts "You entered an invalid city name"
+    puts "You entered an invalid city name try another one"
 	 end
    
 end
